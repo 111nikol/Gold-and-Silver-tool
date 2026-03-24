@@ -19,8 +19,6 @@ python tracker_launcher.py
   - `🔒X` (lock timeline)
   - `🔒Y` (lock ratio scale)
   - Locks are enforced during both live redraws and direct mouse zoom/pan actions
-- Maintainer tuning note:
-  - Interaction constants live in `SensitiveViewBox` inside `gs_tracker_qt.py` (`WHEEL_BASE`, gain clamps, speed curve, and `PAN_GAIN`)
 - Status island:
   - mode (IDLE/LIVE/PAUSED/ERROR)
   - provider in use
