@@ -10,29 +10,29 @@ python tracker_launcher.py
 
 ## GUI highlights
 - Interactive chart (zoom, pan, fit)
-- Zoom/pan sensitivity is tuned for smoother control, including speed-aware wheel zoom acceleration
+- Zoom/pan sensitivity has speed-aware wheel zoom acceleration
 - Provider + fallback (`stooq`, `yahoo`, `google`, `twelve`, `metalsapi`, `polygon`)
-- On-demand historical load (`1M`..`MAX`)
+- Timeline selection (`1M`..`MAX`)
 - Live controls: Snapshot, Start Live, Pause Live, Terminate
-- Live interval options: 10s / 30s / 1m / 5m
+- Update interval options: 10s / 30s / 1m / 5m
 - Axis lock buttons:
   - `🔒X` (lock timeline)
   - `🔒Y` (lock ratio scale)
   - Locks are enforced during both live redraws and direct mouse zoom/pan actions
 - Maintainer tuning note:
   - Interaction constants live in `SensitiveViewBox` inside `gs_tracker_qt.py` (`WHEEL_BASE`, gain clamps, speed curve, and `PAN_GAIN`)
-- Dynamic status island:
+- Status island:
   - mode (IDLE/LIVE/PAUSED/ERROR)
   - provider in use
   - activity state
   - last update timestamp (US Eastern EST/EDT when timezone data is available)
 - Theme/Customization page:
-  - Android-style theme tiles with swatches and names under each preview
+  - Palettes with swatches and names under each preview
   - font family, font size, font weight
   - history/live line widths
 
 ## Easy installation
-All setup and launch flows are Python-only (`Setup.py`, `tracker_launcher.py`).
+All setup and launch flows are simple (`Setup.py`, `tracker_launcher.py`).
 
 ## Install dependencies manually (optional)
 ```bash
