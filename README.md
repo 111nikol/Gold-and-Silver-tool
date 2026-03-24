@@ -31,7 +31,7 @@ python tracker_launcher.py
   - font family, font size, font weight
   - history/live line widths
 
-## No shell workflow
+## Easy installation
 All setup and launch flows are Python-only (`Setup.py`, `tracker_launcher.py`).
 
 ## Install dependencies manually (optional)
